@@ -1146,7 +1146,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 			commandList->SetGraphicsRootConstantBufferView(3, directionalLightResource->GetGPUVirtualAddress());
 			// 描画
 			//commandList->DrawInstanced(UINT(modelData.vertices.size()), 1, 0, 0);
-			commandList->DrawInstanced(kVertexCount, kNumInstance, 0, 0);
+			commandList->DrawInstanced(kVertexCount, 1, 0, 0);
 
 
 			// Spriteの描画。変更が必要なものだけ変更する
